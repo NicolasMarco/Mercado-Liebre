@@ -59,12 +59,51 @@
 
     <main>
 
-        <form action = "/register" method = "post">
-            <input type="text"> </input>
-            <input type="text"> </input>
-            <input type="text"> </input>
+        <form class = "formLogin" action = "/" method = "GET">
+            <label class = "labelLogin" for = "usuario" > Inicia Sesión </label>
+            <input class = "inputLogin" type="text" placeholder="Usuario" name = "usuario" id = "usuario" required minlength="5"> </input>
+            <span type = "feedback"></span>
+            <input class = "inputLogin" type="password" placeholder="Contraseña" name = "contraseña" required minlength="5"> </input>
+            
+            <input type = "submit" value = "Enviar" class = "buttonLogin" >  </input>
         </form>
 
     </main>
+
+    <footer>
+        
+        <div class = contenidoFooter>
+
+            <div class = "bloqueFooter">
+
+                <i class="iconoFooter fa-solid fa-credit-card"></i>
+                <p class = "tituloFooter"> Pagá con tarjeta o en efectivo</p>
+                <p class = "textoFooter"> Con MercadoLiebreCash tenés cuotas sin interes con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            
+            </div>
+            
+            <div class = "bloqueFooter">
+    
+                <i class="iconoFooter fa-solid fa-gift"></i>
+                <p class = "tituloFooter"> Envío gratis desde los $2.500 </p>
+                <p class = "textoFooter"> Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            
+            </div>
+            
+            <div class = "bloqueFooter">
+                
+                <i class="iconoFooter fa-solid fa-user-shield"></i>
+                <p class = "tituloFooter"> Seguridad de principio a fin</p>
+                <p class = "textoFooter"> ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
+           
+            </div>
+            
+            <div class = "derechosFooter">
+                <p class = "textoDerechos"> Copyright © 1999-2023 MercadoLiebre S.R.L.</p>
+            </div>
+
+        </div>
+        
+    </footer>
 </body>
 </html>
