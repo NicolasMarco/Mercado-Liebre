@@ -1,0 +1,832 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    margin: 0;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    margin: auto;
+}
+
+.busqueda {
+    width: 45%;
+    height: 30px;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+    align-self: center;
+}
+
+.logo {
+    padding: 10px;
+    width: 50%;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedorBarra {
+    width: 90%;
+    display: flex;
+    font-family: 'Roboto' , sans-serif;
+    
+}
+
+.barraBusqueda {
+    width : 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+.contenedorLogoBusqueda {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoBusqueda {
+    background-color: white;
+    border: none;
+    padding: 0px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 50%;
+}
+
+.grupoUnoEnlaces {
+    display: none;
+}
+
+.grupoDosEnlaces {
+    display: none;
+}
+
+.enlace {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 12px;
+    display: none;
+}
+
+.textoSubtitulo {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 12px;
+}
+
+.contenedorEnlace {
+    display: none;
+}
+
+.contenedorEnlaceLogo {
+    display: none;
+}
+
+.burgerMenu {
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+.logoBurger {
+    color: white;
+    background-color: #03264C;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.iconBurger {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 24px;
+    font-family: 'Roboto' , sans-serif;
+    color:  #666;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+    
+    font-family: 'Roboto' , sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.descuentos {
+    font-size: 16px;
+    width: 70%;
+    
+    font-family: 'Roboto' , sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+    font-family: 'Roboto' , sans-serif;
+    color:   #666;
+    display: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articulos {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: white;
+    padding-bottom: 1px;
+    flex-direction: column;
+}
+
+.imagenArticulo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+}
+
+.elementosArticulo {
+    display: flex;
+    height: 30px;
+    margin: 15px;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+}
+.textosArticulo {
+    display: flex;
+    padding-top: 15px;
+    width: 75%;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.logoTransporte{
+    display: flex;
+    border: solid 1px #39b54a;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #39b54a;
+    margin-bottom: 5px;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+}
+
+.contenedorImagenBanner {
+    display: flex;
+}
+
+.imagenBanner {
+    width: 100%;
+}
+
+@media (min-width: 361px) {
+
+
+    p {
+        display: block;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+
+    .banner {
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subtitulo {
+        width: 35%;
+        height: 100%;
+        justify-content: center;
+        margin: 0px;
+        padding-left: 10px;
+    }
+
+    .textoSubtitulo {
+        font-size: 11px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .logo {
+        width: 35%;
+        padding: 0px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagenLogo {
+        height: 60px;
+        width: 110px;
+    }
+
+    .busqueda {
+        width: 30%;
+        height: 20px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+
+    .contenedorBarra {
+        width: 87%;
+        padding-left: 5px;
+    }
+
+    .contenedorLogoBusqueda {
+        width: 13%;
+        border-left: solid;
+        border-width: thin;
+        border-color: #ebebeb;
+    }
+
+    .logoBusqueda {
+        width: 14px;
+        height: 14px;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+        font-family: 'Roboto' , sans-serif;
+    }
+
+    .menuNavegacion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    .grupoEnlacesUno {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grupoEnlacesDos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorEnlace {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .contenedorEnlaceLogo {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .logoEnlaces {
+        padding-left: 2px;
+    }
+
+    .enlace {
+        display: block;
+        font-size: 11px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .descripcion {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .articulosUltimaVisita {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+
+   .articulosOfertas {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+
+   .elementosArticulo {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 50px;
+    }
+
+    .descripcion {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-self: flex-end;
+        justify-content: flex-start;
+        font-size: 70%;
+        margin-top: 5px;
+        font-weight: bold;
+        height: 50%;
+    }
+
+    .precios {
+        font-size: 80%;
+        width: 50%;
+    }
+
+    .descuentos {
+        font-size: 80%;
+        text-align: center;
+        width: 50%;
+    }
+
+    .textosArticulo {
+        width: 100%;
+        height: 50%;
+        padding-top: 0px;
+        margin-top: 15px;
+        text-align: start;
+    }
+
+    .logoTransporte {
+        right: 5px;
+        top: -25px;
+        padding: 12px;
+   }
+
+}
+
+@media (min-width: 500px) {
+
+    p {
+        display: block;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+
+    .banner {
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subtitulo {
+        width: 35%;
+        height: 100%;
+        justify-content: center;
+        margin: 0px;
+        padding-left: 10px;
+    }
+
+    .textoSubtitulo {
+        font-size: 11px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .logo {
+        width: 35%;
+        padding: 0px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagenLogo {
+        height: 60px;
+        width: 110px;
+    }
+
+    .busqueda {
+        width: 30%;
+        height: 20px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+
+    .contenedorBarra {
+        width: 87%;
+        padding-left: 5px;
+    }
+
+    .contenedorLogoBusqueda {
+        width: 13%;
+        border-left: solid;
+        border-width: thin;
+        border-color: #ebebeb;
+    }
+
+    .logoBusqueda {
+        width: 14px;
+        height: 14px;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+        font-family: 'Roboto' , sans-serif;
+    }
+
+    .menuNavegacion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    .grupoEnlacesUno {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grupoEnlacesDos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorEnlace {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .contenedorEnlaceLogo {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .logoEnlaces {
+        padding-left: 2px;
+    }
+
+    .enlace {
+        display: block;
+        font-size: 11px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .articulosUltimaVisita {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+
+   .articulosOfertas {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+
+   .elementosArticulo {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 60px;
+    }
+
+    .descripcion {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50%;
+        font-weight: bold;
+        font-size: 80%;
+        padding-top: 5px;
+    }
+
+    .precios {
+        font-size: 100%;
+        height: 100%;
+        width: 30%;
+    }
+
+    .descuentos {
+        font-size: 100%;
+        height: 100%;
+        width: 70%;
+        text-align: center;
+    }
+
+    .textosArticulo {
+        width: 100%;
+        height: 50%;
+        padding-top: 15px;
+        margin-top: 5px;
+        text-align: start;
+    }
+
+    .logoTransporte {
+        right: 5px;
+        top: -25px;
+        padding: 14px;
+   }
+
+}
+
+@media (min-width: 769px) {
+
+    p {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 23%;
+    }
+
+    .imagenArticulo {
+        height: 100%;
+    }
+
+    .banner {
+        height: 50px;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: normal;
+    }
+    
+    .subtitulo {
+        width: 30%;
+        padding-left: 10px;
+        justify-content: flex-start;
+        margin: 0px;
+    }
+
+    .logo {
+        width: 30%;
+        padding: 0px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .imagenLogo {
+        height: 40px;
+        width: 200px;
+    }
+
+    .busqueda {
+        width: 30%;
+        height: 30px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+
+    .contenedorBarra {
+        width: 92%;
+        padding-left: 5px;
+    }
+
+    .contenedorLogoBusqueda {
+        width: 8%;
+        border-left: solid;
+        border-width: thin;
+        border-color: #ebebeb;
+    }
+
+    .logoBusqueda {
+        width: 15px;
+        height: 15px;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+        font-family: 'Roboto' , sans-serif;
+    }
+
+    .menuNavegacion {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .grupoEnlacesUno {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 40%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .grupoEnlacesDos {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 40%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start
+    }
+
+    .contenedorEnlace {
+        display: flex;
+        padding: 8px;
+        height: 32px;
+        align-items: normal;
+        width: auto;
+        justify-content: normal;
+    }
+
+    .contenedorEnlaceLogo {
+        display: flex;
+        padding: 8px;
+        height: 32px;
+        align-items: normal;
+        width: auto;
+        justify-content: normal;
+    }
+
+    .logoEnlaces {
+        padding-left: 5px;
+    }
+
+    .enlace {
+        display: block;
+        font-size: 12px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .elementosArticulo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 80px;
+    }
+
+   .descripcion {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-self: flex-end;
+        justify-content: flex-start;
+        padding: 10px;
+        font-size: 65%;
+   }
+
+   .precios {
+        font-size: 80%;
+        width: 30%;
+        
+   }
+
+   .descuentos {
+        font-size: 80%;
+        width: 70%;
+        
+   }
+
+   .textosArticulo {
+        padding: 10px;
+        padding-top: 20px;
+        width: 100%;
+        margin-top: 0px;
+        text-align: start;
+   }
+   
+   .logoTransporte {
+        right: 10px;
+        top: -25px;
+        padding: 15px;
+   }
+
+   .articulosUltimaVisita {
+        display: flex;
+        justify-content: space-between;
+   }
+
+   .articulosOfertas {
+        display: flex;
+        justify-content: space-between;
+   }
+
+}
+
+@media (min-width: 1000px) {
+
+    .descripcion {
+        font-size: 80%;
+   }
+
+   .precios {
+        font-size: 100%;
+   }
+
+   .descuentos {
+        font-size: 100%;
+   }
+}
