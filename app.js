@@ -19,6 +19,13 @@ app.get("/login" , (req , res) => {
 
 });
 
+app.get("/register" , (req , res) => {
+    
+    const rutaCompleta = path.join(__dirname , "/views/register.html");
+    res.sendFile(rutaCompleta);
+
+});
+
 app.listen(3000, () => {
     console.log("Servidor funcionando en el puerto 3000");
 });

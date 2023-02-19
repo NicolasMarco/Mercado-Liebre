@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/stylesLogin.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Login</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesRegister.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mercado Liebre</title>
+</head>
 <body>
+    
     <header>
         
         <div class = "banner">
@@ -43,7 +44,7 @@
 
                 <div class = "grupoEnlacesDos">
                     <div class = "contenedorEnlaceLogo"> <a class = "enlace" href="#">Creá tu cuenta</a> <i class="logoEnlaces fa-regular fa-id-card"></i> </div>
-                    <div class = "contenedorEnlaceLogo"> <a class = "enlace" href="#">Ingresá</a> <i class="logoEnlaces fa-solid fa-right-to-bracket"></i> </div>
+                    <div class = "contenedorEnlaceLogo"> <a class = "enlace" href="/login">Ingresá</a> <i class="logoEnlaces fa-solid fa-right-to-bracket"></i> </div>
                     <div class = "contenedorEnlaceLogo"> <a class = "enlace" href="#">Mis compras</a> <i class="logoEnlaces fa-solid fa-basket-shopping"></i> </div>
                 </div>
 
@@ -53,20 +54,10 @@
             </div>
             
         </nav>
-
         
     </header>
 
     <main>
-
-        <form class = "formLogin" action = "/" method = "GET">
-            <label class = "labelLogin" for = "usuario" > Inicia Sesión </label>
-            <input class = "inputLogin" type="text" placeholder="Usuario" name = "usuario" id = "usuario" required minlength="5"> </input>
-            <span type = "feedback"></span>
-            <input class = "inputLogin" type="password" placeholder="Contraseña" name = "contraseña" required minlength="5"> </input>
-            
-            <input type = "submit" value = "Enviar" class = "buttonLogin" >  </input>
-        </form>
 
     </main>
 
@@ -105,5 +96,6 @@
         </div>
         
     </footer>
+
 </body>
 </html>

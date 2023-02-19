@@ -13,6 +13,12 @@ header {
     background-color: #EAC926;
 }
 
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .subtitulo {
     display: flex;
     align-items: center;
@@ -131,107 +137,50 @@ header {
     align-items: center;
 }
 
-.titulo {
-    font-size: 24px;
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.inputLogin {
+    width: 70%;
+    margin-top: 20px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    font-family: 'Roboto' , sans-serif; 
+    background-color: white;
+    border-color: white;
+}
+
+.buttonLogin {    
+    width: 30%;
+    height: 25px;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #0459b3;
+    border-color: #0459b3;
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+    text-align: center;
+    text-justify: center;
+    margin-bottom: 10px;
+}
+
+.labelLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
     font-family: 'Roboto' , sans-serif;
     color:  #666;
-}
-
-.precios {
-    font-size: 18px;
-    width: 30%;
-    
-    font-family: 'Roboto' , sans-serif;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.descuentos {
-    font-size: 16px;
-    width: 70%;
-    
-    font-family: 'Roboto' , sans-serif;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #39b54a;
-}
-
-.descripcion {
-    font-size: 16px;
-    font-family: 'Roboto' , sans-serif;
-    color:   #666;
-    display: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-main {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.articulos {
-    display: flex;
-    margin-bottom: 10px;
-    background-color: white;
-    padding-bottom: 1px;
-    flex-direction: column;
-}
-
-.imagenArticulo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: 70%;
-}
-
-.elementosArticulo {
-    display: flex;
-    height: 30px;
-    margin: 15px;
-    border-top: solid 1px #ebebeb;
-    position: relative;
-}
-.textosArticulo {
-    display: flex;
-    padding-top: 15px;
-    width: 75%;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-}
-
-.logoTransporte{
-    display: flex;
-    border: solid 1px #39b54a;
-    background-color: #FFF;
-    padding: 20px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
     margin-top: 10px;
-    color: #39b54a;
-    margin-bottom: 5px;
-    position: absolute;
-    right: 10px;
-    top: -30px;
-}
-
-.contenedorImagenBanner {
-    display: flex;
-}
-
-.imagenBanner {
-    width: 100%;
 }
 
 footer {
@@ -419,68 +368,6 @@ footer {
     .burgerMenu {
         display: none;
     }
-
-    .descripcion {
-        display: block;
-        align-self: flex-end;
-    }
-
-    .articulosUltimaVisita {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-   }
-
-   .articulosOfertas {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-   }
-
-   .elementosArticulo {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 50px;
-    }
-
-    .descripcion {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-self: flex-end;
-        justify-content: flex-start;
-        font-size: 70%;
-        margin-top: 5px;
-        font-weight: bold;
-        height: 50%;
-    }
-
-    .precios {
-        font-size: 80%;
-        width: 50%;
-    }
-
-    .descuentos {
-        font-size: 80%;
-        text-align: center;
-        width: 50%;
-    }
-
-    .textosArticulo {
-        width: 100%;
-        height: 50%;
-        padding-top: 0px;
-        margin-top: 15px;
-        text-align: start;
-    }
-
-    .logoTransporte {
-        right: 5px;
-        top: -25px;
-        padding: 12px;
-   }
-
 }
 
 @media (min-width: 500px) {
@@ -491,11 +378,6 @@ footer {
         margin-block-end: 0px;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-    }
-    
-    .articulos {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 45%;
     }
 
     .banner {
@@ -617,63 +499,13 @@ footer {
         display: none;
     }
 
-    .articulosUltimaVisita {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-   }
-
-   .articulosOfertas {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-   }
-
-   .elementosArticulo {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 60px;
+    .inputLogin {
+        width: 50%;
     }
 
-    .descripcion {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: flex-start;
-        height: 50%;
-        font-weight: bold;
-        font-size: 80%;
-        padding-top: 5px;
+    .buttonLogin {
+        width: 20%;
     }
-
-    .precios {
-        font-size: 100%;
-        height: 100%;
-        width: 30%;
-    }
-
-    .descuentos {
-        font-size: 100%;
-        height: 100%;
-        width: 70%;
-        text-align: center;
-    }
-
-    .textosArticulo {
-        width: 100%;
-        height: 50%;
-        padding-top: 15px;
-        margin-top: 5px;
-        text-align: start;
-    }
-
-    .logoTransporte {
-        right: 5px;
-        top: -25px;
-        padding: 14px;
-   }
 
     .textoFooter {
         width: 55%;
@@ -688,11 +520,6 @@ footer {
         margin-block-end: 0px;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-    }
-
-    .articulos {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 23%;
     }
 
     .imagenArticulo {
@@ -816,80 +643,46 @@ footer {
         display: none;
     }
 
-    .elementosArticulo {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: 80px;
-    }
-
-   .descripcion {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-self: flex-end;
-        justify-content: flex-start;
-        padding: 10px;
-        font-size: 65%;
+    .inputLogin {
+        width: 40%;
    }
 
-   .precios {
-        font-size: 80%;
-        width: 30%;
-        
-   }
-
-   .descuentos {
-        font-size: 80%;
-        width: 70%;
-        
-   }
-
-   .textosArticulo {
-        padding: 10px;
-        padding-top: 20px;
-        width: 100%;
-        margin-top: 0px;
-        text-align: start;
-   }
-   
-   .logoTransporte {
-        right: 10px;
-        top: -25px;
-        padding: 15px;
-   }
-
-   .articulosUltimaVisita {
-        display: flex;
-        justify-content: space-between;
-   }
-
-   .articulosOfertas {
-        display: flex;
-        justify-content: space-between;
+   .buttonLogin {
+        width: 10%;
    }
 
    .textoFooter {
         width: 55%;
     }
-
 }
 
 @media (min-width: 1000px) {
 
-    .descripcion {
-        font-size: 80%;
+   .inputLogin {
+        width: 40%;
+   }
+   
+   .buttonLogin {
+        width: 10%;
    }
 
-   .precios {
-        font-size: 100%;
+   .textoFooter {
+        width: 55%;
    }
 
-   .descuentos {
-        font-size: 100%;
-   }
+    .formLogin {
+        height: 245px;
+        justify-content: center;
+    }
 
-   .contenidoFooter {
+    footer {
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        width: 100%;
+    }
+
+    .contenidoFooter {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -898,7 +691,5 @@ footer {
    .bloqueFooter {
         width: 30%;
    }
-   .textoFooter {
-        width: 55%;
-   }
+
 }
