@@ -171,6 +171,12 @@ main {
     text-align: center;
     text-justify: center;
     margin-bottom: 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.buttonLogin:hover {
+    background-color: #0022AA;
 }
 
 .labelLogin {
@@ -644,7 +650,7 @@ footer {
     }
 
     .inputLogin {
-        width: 40%;
+        width: 50%;
    }
 
    .buttonLogin {
@@ -653,6 +659,31 @@ footer {
 
    .textoFooter {
         width: 55%;
+    }
+    
+    .contenidoFooter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+   }
+    
+    .bloqueFooter {
+        width: 33%;
+    }
+    
+    .textoFooter {
+        width: 100%;
+    }
+
+    .tituloFooter {
+        font-size: 15px;
+    }
+
+    footer {
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        width: 100%;
     }
 }
 

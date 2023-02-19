@@ -262,6 +262,12 @@ footer {
     text-align: center;
     text-justify: center;
     margin-bottom: 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.buttonLogin:hover {
+    background-color: #0022AA;
 }
 
 @media (min-width: 361px) {
@@ -671,16 +677,35 @@ footer {
     }
 
     .bloqueRegistro {
-        width: 80%;
+        width: 60%;
     }
     
     .bloqueRegistroUsuario {
-        width: 80%;
+        width: 60%;
     }
     
     .buttonLogin {
         width: 15%;
     }
+
+    .contenidoFooter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+   }
+    
+    .bloqueFooter {
+        width: 33%;
+    }
+    
+    .textoFooter {
+        width: 100%;
+    }
+
+    .tituloFooter {
+        font-size: 15px;
+    }
+
 }
 
 @media (min-width: 1000px) {
@@ -700,14 +725,14 @@ footer {
     }
 
     .bloqueRegistro {
-        width: 60%;
+        width: 50%;
     }
     
     .bloqueRegistroUsuario {
-        width: 60%;
+        width: 50%;
     }
 
     .buttonLogin {
-        width: 5%;
+        width: 10%;
     }
 }
