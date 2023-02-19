@@ -190,6 +190,80 @@ footer {
     color:  #666;
 }
 
+.formRegister {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    align-self: center;
+}
+
+.labelRegister {
+    font-weight: bold;
+    font-family: 'Roboto' , sans-serif;
+    color:  black;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+.inputRegister {
+    margin-bottom: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    background-color: white;
+    border-color: white;
+    height: 25px;
+}
+
+.bloqueRegistro {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.bloqueRegistroUsuario {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.labelCheckbox {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto' , sans-serif;
+    color:  black;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.labelRadio {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Roboto' , sans-serif;
+    color:  black;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.buttonLogin {    
+    width: 30%;
+    height: 25px;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #0459b3;
+    border-color: #0459b3;
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+    text-align: center;
+    text-justify: center;
+    margin-bottom: 10px;
+}
+
 @media (min-width: 361px) {
     p {
         display: block;
@@ -456,6 +530,10 @@ footer {
     .textoFooter {
         width: 55%;
     }
+
+    .buttonLogin {
+        width: 15%;
+    }
 }
 
 @media (min-width: 769px) {
@@ -591,6 +669,18 @@ footer {
    .textoFooter {
         width: 55%;
     }
+
+    .bloqueRegistro {
+        width: 80%;
+    }
+    
+    .bloqueRegistroUsuario {
+        width: 80%;
+    }
+    
+    .buttonLogin {
+        width: 15%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -598,14 +688,7 @@ footer {
     .textoFooter {
          width: 55%;
     }
- 
-    footer {
-        position:fixed;
-        left:0px;
-        bottom:0px;
-        width: 100%;
-    }
- 
+
      .contenidoFooter {
         flex-direction: row;
         flex-wrap: wrap;
@@ -614,5 +697,17 @@ footer {
  
     .bloqueFooter {
         width: 30%;
+    }
+
+    .bloqueRegistro {
+        width: 60%;
+    }
+    
+    .bloqueRegistroUsuario {
+        width: 60%;
+    }
+
+    .buttonLogin {
+        width: 5%;
     }
 }

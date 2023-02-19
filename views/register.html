@@ -58,6 +58,68 @@
     </header>
 
     <main>
+        <form class = "formRegister" action="/" method="GET">
+            
+            <div class = "bloqueRegistro">
+                <label class = "labelRegister" for = "nombreYApellido"> Nombre y apellido </label>
+                <input class = "inputRegister" type="text" placeholder = "Nombre y apellido" name = "nombreApellido" id = "nombreYApellido" required minlength="5"> </input>
+                <input class = "inputRegister" type="text" placeholder = "Nombre de usuario" name = "nombreUsuario" required minlength="5"> </input>
+                <input class = "inputRegister" type="email" placeholder = "Email" name = "email" required> </input>
+            </div>
+
+            <div class = "bloqueRegistro">
+                <label class = "labelRegister" > Fecha de nacimiento </label>
+                <input class = "inputRegister" type="date" name = "fechaNacimiento" required> </input>
+                <input class = "inputRegister" type="text" placeholder = "Domicilio" name = "domicilio" required> </input>
+            </div>
+
+            <div class = "bloqueRegistroUsuario">
+                <label class = "labelRegister" > Perfil de usuario </label>
+                <label class = "labelRadio" >
+                    <input class = "inputRegisterRadio" type="radio" name = "tipoCliente" required> </input>
+                    Comprador
+                </label>
+                <label class = "labelRadio" >
+                    <input class = "inputRegisterRadio" type="radio" name = "tipoCliente" required> </input>
+                    Vendedor
+                </label>
+            </div>
+
+            <div class = "bloqueRegistro">
+                <label class = "labelRegister" > Intereses </label>
+                <label class = "labelCheckbox" >
+                    <input class = "inputRegisterCheckBox" type="checkbox" name = "tipoInteres"> </input>
+                    Electro
+                </label>
+                <label class = "labelCheckbox" >
+                    <input class = "inputRegisterCheckBox" type="checkbox" name = "tipoInteres"> </input>
+                    Moda
+                </label>
+                <label class = "labelCheckbox" >
+                    <input class = "inputRegisterCheckBox" type="checkbox" name = "tipoInteres"> </input>
+                    Hogar
+                </label>
+                <label class = "labelCheckbox" >
+                    <input class = "inputRegisterCheckBox" type="checkbox" name = "tipoInteres"> </input>
+                    Juguetería
+                </label>
+                <label class = "labelCheckbox" >
+                    <input class = "inputRegisterCheckBox" type="checkbox" name = "tipoInteres"> </input>
+                    Vida sana
+                </label>
+            </div>
+
+            <div class = "bloqueRegistro">
+                <label class = "labelRegister" > Foto de usuario </label>
+                <input class = "inputRegister" type="file" name = "imagenDePefil" accept = ".jpg, .png"> </input>
+                <label class = "labelRegister" for = "inputContraseña"> Contraseña </label>
+                <input class = "inputRegister" type="password" placeholder = "Contraseña" name = "contraseña" id = "inputContraseña" required minlength="5"> </input>
+                <input class = "inputRegister" type="password" placeholder = "Repetir contraseña" name = "contraseña" required minlength="5"> </input>
+            </div>
+
+            <input type = "submit" value = "Enviar" class = "buttonLogin" >  </input>
+
+        </form>
 
     </main>
 
