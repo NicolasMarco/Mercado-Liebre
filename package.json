@@ -1,13 +1,14 @@
 {
-  "name": "clase-17",
+  "name": "Mercado-Liebre",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicolás Agustín Marco",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
