@@ -319,7 +319,6 @@ footer {
     }
 
     .articulos {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45%;
     }
 
@@ -461,7 +460,7 @@ footer {
         height: 50px;
     }
 
-    .descripcion {
+    .articulos:hover>div .descripcion {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -511,7 +510,6 @@ footer {
     }
     
     .articulos {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45%;
     }
 
@@ -653,7 +651,7 @@ footer {
         height: 60px;
     }
 
-    .descripcion {
+    .articulos:hover>div .descripcion {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -708,7 +706,6 @@ footer {
     }
 
     .articulos {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 23%;
     }
 
@@ -840,7 +837,7 @@ footer {
         height: 80px;
     }
 
-    .descripcion {
+    .articulos:hover>div .descripcion {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -911,7 +908,7 @@ footer {
 
 @media (min-width: 1000px) {
 
-    .descripcion {
+    .articulos:hover>div .descripcion {
         font-size: 80%;
    }
 
