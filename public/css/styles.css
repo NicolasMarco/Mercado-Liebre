@@ -171,6 +171,8 @@ header {
     font-family: 'Roboto' , sans-serif;
     color:   #666;
     font-weight: bold;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 .articulos:hover>div .descripcion {
@@ -182,7 +184,7 @@ header {
 }
 
 .articulos:hover>div .logoTransporte {
-    transform: rotateX(180deg);
+    transform: rotateZ(-90deg);
 }
 
 main {
@@ -198,7 +200,7 @@ main {
     background-color: white;
     padding-bottom: 1px;
     flex-direction: column;
-    transition-property: box-shadow, display , transform;
+    transition-property: all;
     transition-duration: 0.5s;
 }
 
@@ -244,7 +246,7 @@ main {
     position: absolute;
     right: 10px;
     top: -30px;
-    transition-property: transform;
+    transition-property: all;
     transition-duration: 0.5s;
 }
 
@@ -302,6 +304,12 @@ footer {
     font-size: 2em;
     color: #03264C;
     margin-bottom: 10px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.iconoFooter:hover {
+    color: #666;
 }
 
 .textoDerechos {
@@ -355,6 +363,11 @@ footer {
     }
 
     .imagenLogo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .linkImagenLogo {
         height: 60px;
         width: 110px;
     }
@@ -546,6 +559,11 @@ footer {
     }
 
     .imagenLogo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .linkImagenLogo {
         height: 60px;
         width: 110px;
     }
@@ -738,6 +756,11 @@ footer {
     }
 
     .imagenLogo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .linkImagenLogo {
         height: 40px;
         width: 200px;
     }

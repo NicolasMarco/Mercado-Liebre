@@ -235,6 +235,12 @@ footer {
     font-size: 2em;
     color: #03264C;
     margin-bottom: 10px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.iconoFooter:hover {
+    color: #666;
 }
 
 .textoDerechos {
@@ -289,6 +295,11 @@ footer {
     }
 
     .imagenLogo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .linkImagenLogo {
         height: 60px;
         width: 110px;
     }
@@ -419,6 +430,11 @@ footer {
     }
 
     .imagenLogo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .linkImagenLogo {
         height: 60px;
         width: 110px;
     }
@@ -557,6 +573,11 @@ footer {
     }
 
     .imagenLogo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .linkImagenLogo {
         height: 40px;
         width: 200px;
     }
